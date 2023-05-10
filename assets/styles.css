@@ -82,9 +82,10 @@
     }
     
     .project a img {
-    max-width: 100%;
-    display: block;
-    margin-bottom: 20px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-image: image(images\Horiseon Landing Page)
     }
     
     .project h3 {
