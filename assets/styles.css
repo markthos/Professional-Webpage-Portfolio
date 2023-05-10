@@ -58,16 +58,28 @@
     margin-bottom: 30px;
     }
     
-    #about {
+    .intro {
     margin-bottom: 40px;    
     }
 
-    #about img {
-    max-width: 50%;
-    display: block;
-    margin-bottom: 20px;
-    align-content: center;
+    .intro img {
+        max-width: 25%;
+        display: block;
+        margin-bottom: 20px;
+        align-content: center;
     }
+
+    .aboutme {
+        margin-bottom: 40px;
+    }
+
+    .aboutme img {
+        max-width: 25%;
+        display: block;
+        margin-bottom: 20px;
+        align-content: center;
+        }
+
 
     .project {
     margin-bottom: 40px;
