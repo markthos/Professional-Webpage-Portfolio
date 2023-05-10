@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Portfolio - Mark Thostesen</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Mark Thostesen</title>
     <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/styles.css">
   </head>
+
   <body>
+
     <header>
       <h1>Mark Thostesen</h1>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
       </nav>
     </header>
     <main>
-      <section id="about">
-        <img src="images\Profile Picture.jpg" alt="Profile Picture">
-        <h2>About Me</h2>
-        <p>Write a brief introduction about yourself and your skills and experience.</p>
-      </section>
-      <section id="portfolio">
-        <h2>My Work</h2>
-        <div class="project">
-          <img src="images\Prework_Study-Guide.png" alt="Prework-Study-Guide">
-          <h3>Prework-Study-Guide</h3>
-          <p>This is a study guide for the Prework portion of the U.C. Berkeley Full Stack Web Development Bootcamp.</p>
-          <a href="https://markthos.github.io/prework-study-guide/">View Project</a>
-        </div>
-        <div class="project">
-          <img src="images\Horiseon Landing Page.png" alt="Horiseon Landing Page">
-          <h3>Horiseon_Landing_Page</h3>
-          <p>This is a landing page for a company called Horiseon that focuses on Search Engine Optimization</p>
-          <a href="https://markthos.github.io/Horiseon_Landing_Page/">View Project</a>
-        </div>
+      <div class="intro">
+        <section id="face">
+          <img src="images\Profile Picture.jpg" alt="Angry Profile Picture">
+          <h1>Mark E Thostesen</h1>
+          <p>Full Stack Web Human</p>
+        </section>
+      </div>
+      <div class="aboutme">
+        <section id="about">
+          <img src="images\Secondary Profile Picture.jpg" alt="Funny Profile Picture">
+          <h2>About Me</h2>
+          <p>Write a brief introduction about yourself and your skills and experience.</p>
+        </section>
+      </div>
+      <div class="mywork">
+        <section id="portfolio">
+          <h2>My Work</h2>
+          <div class="project">
+            <img src="images\Prework_Study-Guide.png" alt="Prework-Study-Guide">
+            <h3>Prework-Study-Guide</h3>
+            <p>This is a study guide for the Prework portion of the U.C. Berkeley Full Stack Web Development Bootcamp.</p>
+            <a href="https://markthos.github.io/prework-study-guide/">View Project</a>
+          </div>
+          <div class="project">
+            <img src="images\Horiseon Landing Page.png" alt="Horiseon Landing Page">
+            <h3>Horiseon_Landing_Page</h3>
+            <p>This is a landing page for a company called Horiseon that focuses on Search Engine Optimization</p>
+            <a href="https://markthos.github.io/Horiseon_Landing_Page/">View Project</a>
+          </div>
         <!-- Add more projects as needed -->
-      </section>
-      <section id="contact" class="contact">
+        </section>
+      </div>
+      <div id="contact" class="contact">
         <h2>Contact Me</h2>
         <form action="mailto:aydenthos@gmail.com" method="post" enctype="text/plain">
           <label for="name">Name:</label>
@@ -51,7 +63,7 @@
           <textarea id="message" name="message" required>Let's Work Together!</textarea>
           <button type="submit" value="Send">Send</button>
         </form>
-      </section>
+        </div>
     </main>
     <footer>
       <p>&copy; 2023 Mark Thostesen</p>
