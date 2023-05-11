@@ -101,20 +101,23 @@
 
     .mywork #portfolio {
         display: flex;
-        margin-left: 20px;
+        margin: 20px;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 40px; 
 
     }
     
-    .project a img {
+    .project {
+        padding: 40px;
+
+    }
+    #portfolio .project a img {
         display: flex;
-        width: 25%;
-        height: 25%;
+        width: 100%;
+        height: 100%;
         flex-wrap: wrap;
         justify-content: space-around;
-        margin-bottom: 20px;
+        margin: 20px;
     }
     
     .project h3 {
@@ -142,8 +145,6 @@
     .contact #contact {
     display: block;
     margin-left: 20px;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 40px; 
     }
 
