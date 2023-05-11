@@ -1,0 +1,149 @@
+/* Apply a dark background color to the body */
+body {
+    background-color: #333;
+  }
+  
+  /* Set the font color for the entire page */
+  body, h1, h2, h3, h4, h5, h6, p, a, input, textarea {
+    color: #fff;
+  }
+  
+  /* Set the font for the page */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #111;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav a {
+    margin-left: 10px;
+    text-decoration: none;
+  }
+  
+  /* Style the main sections */
+  main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .intro,
+  .aboutme,
+  .mywork,
+  .contact {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .intro #face,
+  .aboutme #about,
+  .mywork #portfolio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  /* Style the images */
+  .intro #face img,
+  .aboutme #about img,
+  .mywork #portfolio img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  /* Style the project sections */
+  .project {
+    padding: 20px;
+    background-color: #222;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .project h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .project a img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .project a {
+    display: inline-block;
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project a:hover {
+    background-color: #777;
+  }
+  
+  /* Style the contact form */
+  form {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  form button[type="submit"] {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #777;
+  }
+  
+  /* Style the footer */
+  footer {
+    padding: 20px;
+    background-color: #111;
+    text-align: center;
+    color: #fff;
+  }
+  
