@@ -1,32 +1,32 @@
     * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
     body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    color: white;
-    line-height: 1.5;
-    background-color: black;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        color: white;
+        line-height: 1.5;
+        background-color: black;
     }
     
     a {
-    color: whitesmoke;
-    text-decoration: none;
+        color: whitesmoke;
+        text-decoration: none;
     }
     
     h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    margin: 0;
+        font-weight: 700;
+        margin: 0;
     }
     
     header {
         display: flex;
-        margin: 20px;
+        margin: 20px 20px 0px 20px;
         padding-inline: 40px;
         justify-content: space-between;
         align-items: center;
@@ -43,38 +43,47 @@
     }
     
     nav a:hover {
-    color: darkgrey;
+        color: darkgrey;
     }
     
     main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
     }
     
     section {
-   flex: 1
+        flex: 1
     }
     
     h2 {
-    margin-bottom: 30px;
+        margin-bottom: 30px;
     }
     
     .intro #face {
         display: flex;
-        margin-left: 20px;
+        margin: 80px;
+        margin-top: 0px;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 40px;    
+        margin-bottom: 40px;
+    }
+
+    .intro #face aside {
+        display: block;
+        padding: 120px;
+        margin: 40px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     .intro #face img {
         display: flex;
-        width: 25%;
-        height: 25%;
+        width: 30%;
+        height: 30%;
         flex-wrap: wrap;
         justify-content: space-around;
         margin-bottom: 20px;
+        margin-right: 25px;
     }
 
     .aboutme #about {
@@ -87,6 +96,7 @@
 
     .aboutme #about aside {
         float: left;
+        margin-right: 40px;
     }
 
     .aboutme #about img {
@@ -143,46 +153,45 @@
     }
     
     .contact #contact {
-    display: block;
-    margin-left: 20px;
-    margin-bottom: 40px; 
+        display: block;
+        margin-left: 20px;
+        margin-bottom: 40px; 
     }
 
     form label {
-    display: block;
-    margin-bottom: 10px;
+        display: block;
+        margin-bottom: 10px;
     }
     
-    form input,
-    form textarea {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    form input, form textarea {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
     }
     
     form button[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
     }
     
     form button[type="submit"]:hover {
-    background-color: #666;
+        background-color: #666;
     }
     
     footer {
-    padding: 20px;
-    background-color: black;
-    box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.1);
-    color: whitesmoke;
-    text-align: center;
-    margin-top: 50px;
+        padding: 20px;
+        background-color: black;
+        box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.1);
+        color: whitesmoke;
+        text-align: center;
+        margin-top: 50px;
     }
 
     @media screen and (max-width: 768px) {
