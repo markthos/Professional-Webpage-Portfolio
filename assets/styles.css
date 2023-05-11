@@ -6,6 +6,9 @@
     body {
     font-family: Arial, sans-serif;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     color: white;
     line-height: 1.5;
     background-color: black;
@@ -23,7 +26,8 @@
     
     header {
         display: flex;
-        margin-left: 20px;
+        margin: 20px;
+        padding-inline: 40px;
         justify-content: space-between;
         align-items: center;
         background-color: black;
@@ -43,11 +47,13 @@
     }
     
     main {
-    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
     }
     
     section {
-    margin-bottom: 50px;
+   flex: 1
     }
     
     h2 {
@@ -66,7 +72,7 @@
         display: flex;
         width: 25%;
         height: 25%;
-        flex-flow: row nowrap;
+        flex-wrap: wrap;
         justify-content: space-around;
         margin-bottom: 20px;
     }
@@ -77,6 +83,10 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 40px; 
+    }
+
+    .aboutme #about aside {
+        float: left;
     }
 
     .aboutme #about img {
@@ -161,4 +171,12 @@
     box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-top: 50px;
+    }
+
+    @media screen and (max-width: 768px) {
+        main,
+        nav {
+            flex-direction: column;
+        }
+        
     }
