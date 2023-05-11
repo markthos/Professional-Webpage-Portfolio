@@ -22,24 +22,24 @@
     }
     
     header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: black;
-    color: whitesmoke;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+        display: flex;
+        margin-left: 20px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: whitesmoke;
     }
     
     nav {
-    list-style: none;
-    display: flex;
-    margin-right: 20px;
-    transition: color 0.3s ease;
+        display: flex;
+        width: 30%;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        margin-right: 40px;
     }
     
     nav a:hover {
-    color: whitesmoke;
+    color: darkgrey;
     }
     
     main {
@@ -54,26 +54,38 @@
     margin-bottom: 30px;
     }
     
-    .intro {
-    margin-bottom: 40px;    
+    .intro #face {
+        display: flex;
+        margin-left: 20px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;    
     }
 
-    .intro img {
-        max-width: 25%;
-        display: block;
+    .intro #face img {
+        display: flex;
+        width: 25%;
+        height: 25%;
+        flex-flow: row nowrap;
+        justify-content: space-around;
         margin-bottom: 20px;
-        align-content: center;
     }
 
-    .aboutme {
-        margin-bottom: 40px;
+    .aboutme #about {
+        display: flex;
+        margin-left: 20px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px; 
     }
 
-    .aboutme img {
-        max-width: 25%;
-        display: block;
+    .aboutme #about img {
+        display: flex;
+        width: 25%;
+        height: 25%;
+        flex-flow: row nowrap;
+        justify-content: space-around;
         margin-bottom: 20px;
-        align-content: center;
         }
 
 
