@@ -93,7 +93,7 @@
         display: flex;
         width: 25%;
         height: 25%;
-        flex-flow: row nowrap;
+        flex-wrap: wrap;
         justify-content: space-around;
         margin-bottom: 20px;
         }
@@ -102,41 +102,51 @@
     .mywork #portfolio {
         display: flex;
         margin-left: 20px;
-        margin-bottom: 40px;
         justify-content: space-between;
         align-items: center;
-        flex-flow: row nowrap;
+        margin-bottom: 40px; 
 
     }
     
     .project a img {
-    display: inline-block;
-    width: 200px;
-    height: 200px;
+        display: flex;
+        width: 25%;
+        height: 25%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 20px;
     }
     
     .project h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+        font-size: 24px;
+        margin-bottom: 10px;
     }
     
     .project p {
-    margin-bottom: 20px;
+        margin-bottom: 20px;
     }
     
     .project a {
-    display: inline-block;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+        display: flex;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
     }
     
     .project a:hover {
-    background-color: #666;
+        background-color: #666;
     }
     
+    .contact #contact {
+    display: block;
+    margin-left: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px; 
+    }
+
     form label {
     display: block;
     margin-bottom: 10px;
@@ -167,8 +177,9 @@
     
     footer {
     padding: 20px;
-    background-color: #fff;
+    background-color: black;
     box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.1);
+    color: whitesmoke;
     text-align: center;
     margin-top: 50px;
     }
