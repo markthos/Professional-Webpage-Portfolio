@@ -67,13 +67,6 @@
         align-items: center;
     }
 
-    .intro #face aside {
-        display: block;
-        padding: 120px;
-        margin: 40px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
     .intro #face img {
         display: flex;
         width: 30%;
@@ -83,6 +76,36 @@
         margin-bottom: 20px;
         margin-right: 25px;
     }
+
+    #face {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      #face div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      #face img {
+        height: 250px;
+        width: 250px;
+      }
+      
+      #face h2 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      #face p {
+        font-size: 24px;
+        text-align: center;
+      }
+      
 
     .aboutme #about {
         display: flex;
