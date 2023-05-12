@@ -3,7 +3,8 @@
     margin: 0;
     padding: 0;
   }
-  
+
+  /* Define basic styling for the Typography of the webpage */
   body {
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -26,7 +27,8 @@
     font-weight: 700;
     margin: 0;
   }
-  
+
+  /* Setup header disply structure and styling */ 
   header {
     display: flex;
     margin: 20px 20px 0px 20px;
@@ -36,7 +38,8 @@
     background-color: black;
     color: whitesmoke;
   }
-  
+
+  /* add flex and hover capabilities to the nav links */
   nav {
     display: flex;
     width: 30%;
@@ -48,7 +51,8 @@
   nav a:hover {
     color: darkgrey;
   }
-  
+
+  /* build flex functionality for the main body of the page */
   main {
     display: flex;
     flex-direction: column;
@@ -62,7 +66,8 @@
   h2 {
     margin-bottom: 30px;
   }
-  
+
+  /* Set a dynamic row that styles and positions images to be on either side of name and title */
   .intro #face {
     display: flex;
     margin: 0px 80px;
@@ -109,7 +114,7 @@
     text-align: center;
   }
   
-  
+  /* Style about section to be dynamic but centered */
   .aboutme #about {
     display: flex;
     margin-left: 20px;
@@ -128,7 +133,8 @@
     background-color: darkolivegreen;
     border-radius: 5px;
   }
-  
+
+  /* Style portfolio section to be dynamic and have interactivity that is responsive with hover elements */
   .mywork header {
     display: flex;
     margin: 20px auto 0px auto;
@@ -197,6 +203,7 @@
     margin: 0;
   }
   
+  /* Style a contact form that responds to change in screens and has an easily accessed central position on the screen at all times */
   .contact {
     display: flex;
     flex-direction: column;
@@ -264,7 +271,7 @@
     margin-top: 50px;
   }
   
-  /* Responsive design */
+  /* Add the responsive design element for changes in screen size */
   @media screen and (max-width: 768px) {
     header {
       flex-wrap: wrap;
