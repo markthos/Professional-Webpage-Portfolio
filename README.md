@@ -15,14 +15,12 @@ Deploy a portfolio of a potential employee's previous work
 Clone the repository or download the ZIP file to your local machine. Open the `index.html` file in your web browser to view the landing page.
 
 ```sh
-git clone git@github.com:markthos/challenge1.git
+git clone git@github.com:markthos/Professional-Webpage-Portfolio.git
 ```
 
 ## Usage
 
-The landing page features a header with a navigation menu, a hero image, and several articles that describe Horiseon's services. The page also includes an aside with benefits of using Horiseon's services and a footer with the company's information.
-
-Click on the navigation menu to jump to the different sections on the page. The articles provide more detailed information on Horiseon's services.
+Dyanmic professional profile of a young upstart full stack web developer. The page allows for navigation to an about section, portfolio section, and a contact section. There are also links to current projects
 
 ## Credits
 
@@ -34,11 +32,11 @@ This landing page is licensed under the [MIT License](https://opensource.org/lic
 
 ## Screenshot
 
-<img src="assets\images\screencapture-markthos-github-io-Horiseon-Landing-Page-2023-05-09-14_04_01.png">
+<img src="images\screencapture-127-0-0-1-5500-index-html-2023-05-12-01_30_27.png">
 
 ## Link
 
 <ul>
-  <li><a href="https://markthos.github.io/Horiseon_Landing_Page/">URL of deployed webpage</a></li>
-  <li><a href="https://github.com/markthos/Horiseon_Landing_Page.git">URL of GitHub repository</a></li>
+  <li><a href="https://markthos.github.io/Professional-Webpage-Portfolio/">URL of deployed webpage</a></li>
+  <li><a href="https://github.com/markthos/Professional-Webpage-Portfolio.git">URL of GitHub repository</a></li>
 </ul>
