@@ -26,7 +26,7 @@
     
     header {
         display: flex;
-        margin: 20px 20px 0px 20px;
+        margin: 20px 20px 0px 120px;
         padding-inline: 40px;
         justify-content: space-between;
         align-items: center;
@@ -82,29 +82,29 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-      }
+    }
       
-      #face div {
+    #face div {
         display: flex;
         flex-direction: column;
         align-items: center;
-      }
+    }
       
-      #face img {
+    #face img {
         height: 250px;
         width: 250px;
-      }
+    }
       
-      #face h2 {
+    #face h2 {
         font-size: 36px;
         font-weight: bold;
         margin-bottom: 10px;
-      }
+    }
       
-      #face p {
+    #face p {
         font-size: 24px;
         text-align: center;
-      }
+    }
       
 
     .aboutme #about {
@@ -115,24 +115,26 @@
         margin-bottom: 40px; 
     }
 
-    .aboutme #about aside {
-        float: left;
-        margin: 40px;
+    .aboutme article h2 {
+        text-align: center;
+        font-weight: bold;
     }
-
-    .aboutme #about img {
-        display: flex;
-        width: 25%;
-        height: 25%;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-bottom: 20px;
-        }
+      
+    .aboutme article p {
+        text-align: center;
+        background-color: darkolivegreen;
+        border-radius: 5px;
+    }
+      
 
     .mywork header {
         display: flex;
+        margin: 20px auto 0px auto;
+        padding-inline: 40px;
         justify-content: center;
         align-items: center;
+        background-color: black;
+        color: whitesmoke;
 
     }
     .mywork #portfolio {
@@ -142,11 +144,7 @@
         align-items: center;
 
     }
-    
-    .project {
-        padding: 40px;
 
-    }
     #portfolio .project a img {
         width: 100%;
         height: 100%;
@@ -154,56 +152,94 @@
         justify-content: space-around;
         margin: 20px;
     }
-    
-    .project h3 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-    
-    .project p {
+
+    .project {
+        padding: 40px;
+        flex-basis: 30%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         margin-bottom: 20px;
     }
-    
+      
+    .project h3 {
+        font-size: 24px;
+        margin-bottom: 0px;
+    }
+      
     .project a {
-        background-color: #333;
+        background-color: darkolivegreen;
         color: #fff;
         padding: 10px 20px;
-        border-radius: 5px;
+        border-radius: 0px 0px 5px 5px;
         transition: background-color 0.3s ease;
-    }
-    
-    .project a:hover {
-        background-color: #666;
-    }
-    
-    .contact #contact {
         display: block;
-        margin: 20px;
+    }
+      
+    .project a:hover {
+        background-color: olivedrab;
+    }
+      
+    .project h3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        background-color: whitesmoke;
+        color: #555;
+        border-radius: 5px 5px 0px 0px;
+    }
+      
+    .project h3 {
+        font-size: 24px;
+        margin: 0;
     }
 
-    form {
-        width: 100%;
-        max-width: 100%;
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
     }
   
-    form label {
-        margin-bottom: 40px;
+    .contact h2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+  
+    .contact form {
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 800px;
+        justify-content: center;
         width: 100%;
+        max-width: 800px;
     }
   
-    form input[type="text"], form input[type="email"], form textarea {
+    .contact form label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+  
+    .contact form input[type="text"], .contact form input[type="email"], .contact form textarea {
+        width: 100%;
+        max-width: 500px;
         padding: 10px;
-        border: 1px solid #ccc;
+        border: none;
         border-radius: 5px;
         margin-bottom: 20px;
     }
   
-    form button[type="submit"] {
+    .contact form textarea {
+        height: 150px;
+    }
+  
+    .contact form button[type="submit"] {
         background-color: #555;
         color: #fff;
         border: none;
@@ -212,10 +248,10 @@
         transition: background-color 0.3s ease;
     }
   
-    form button[type="submit"]:hover {
+    .contact form button[type="submit"]:hover {
         background-color: #777;
     }
-  
+
     /* Style the footer */
     footer {
         padding: 20px;
