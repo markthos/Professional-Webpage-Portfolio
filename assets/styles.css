@@ -94,7 +94,7 @@
 
     .aboutme #about aside {
         float: left;
-        margin-right: 40px;
+        margin: 40px;
     }
 
     .aboutme #about img {
@@ -106,7 +106,12 @@
         margin-bottom: 20px;
         }
 
+    .mywork header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+    }
     .mywork #portfolio {
         display: flex;
         margin: 20px;
@@ -115,11 +120,6 @@
 
     }
     
-    .mywork #portfolio aside{
-        display: block;
-        padding: 120px;
-        margin: 40px;
-    }
     .project {
         padding: 40px;
 
