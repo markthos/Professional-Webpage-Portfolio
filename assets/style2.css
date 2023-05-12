@@ -7,9 +7,6 @@
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   color: white;
   line-height: 1.5;
   background-color: black;
@@ -20,7 +17,12 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   margin: 0;
 }
@@ -68,13 +70,6 @@ h2 {
   align-items: center;
 }
 
-.intro #face aside {
-  display: block;
-  padding: 120px;
-  margin: 40px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
 .intro #face img {
   display: flex;
   width: 30%;
@@ -85,6 +80,36 @@ h2 {
   margin-right: 25px;
 }
 
+#face {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#face div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#face img {
+  height: 250px;
+  width: 250px;
+}
+
+#face h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#face p {
+  font-size: 24px;
+  text-align: center;
+}
+
+
 .aboutme #about {
   display: flex;
   margin-left: 20px;
@@ -93,35 +118,33 @@ h2 {
   margin-bottom: 40px;
 }
 
-.aboutme #about aside {
-  float: left;
-  margin-right: 40px;
+.aboutme article h2 {
+  text-align: center;
+  font-weight: bold;
 }
 
-.aboutme #about img {
+.aboutme article p {
+  text-align: center;
+  background-color: darkolivegreen;
+  border-radius: 5px;
+}
+
+.mywork header {
   display: flex;
-  width: 25%;
-  height: 25%;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: 20px;
+  margin: 20px auto 0px auto;
+  padding-inline: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: whitesmoke;
 }
 
 .mywork #portfolio {
   display: flex;
+  flex-wrap: wrap;
   margin: 20px;
   justify-content: space-around;
   align-items: center;
-}
-
-.mywork #portfolio aside{
-  display: block;
-  padding: 120px;
-  margin: 40px;
-}
-
-.project {
-  padding: 40px;
 }
 
 #portfolio .project a img {
@@ -132,55 +155,93 @@ h2 {
   margin: 20px;
 }
 
-.project h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.project {
+  padding: 40px;
+  flex-basis: 30%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
-.project p {
-  margin-bottom: 20px;
+.project h3 {
+  font-size: 24px;
+  margin-bottom: 0px;
 }
 
 .project a {
-  background-color: #333;
+  background-color: darkolivegreen;
   color: #fff;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 0px 0px 5px 5px;
   transition: background-color 0.3s ease;
+  display: block;
 }
 
 .project a:hover {
-  background-color: #666;
+  background-color: olivedrab;
 }
 
-.contact #contact {
-  display: block;
-  margin: 20px;
+.project h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: whitesmoke;
+  color: #555;
+  border-radius: 5px 5px 0px 0px;
 }
 
-form {
-  width: 100%;
-  max-width: 100%;
+.project h3 {
+  font-size: 24px;
+  margin: 0;
 }
 
-form label {
-  margin-bottom: 40px;
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 800px;
+  justify-content: center;
   width: 100%;
+  max-width: 800px;
 }
 
-form input[type="text"], form input[type="email"], form textarea {
+.contact form label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact form input[type="text"], .contact form input[type="email"], .contact form textarea {
+  width: 100%;
+  max-width: 500px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 5px;
   margin-bottom: 20px;
 }
 
-form button[type="submit"] {
+.contact form textarea {
+  height: 150px;
+}
+
+.contact form button[type="submit"] {
   background-color: #555;
   color: #fff;
   border: none;
@@ -189,7 +250,7 @@ form button[type="submit"] {
   transition: background-color 0.3s ease;
 }
 
-form button[type="submit"]:hover {
+.contact form button[type="submit"]:hover {
   background-color: #777;
 }
 
@@ -203,11 +264,57 @@ footer {
   margin-top: 50px;
 }
 
+/* Responsive design */
 @media screen and (max-width: 768px) {
-  main,
+  header {
+    flex-wrap: wrap;
+  }
+
   nav {
-      flex-direction: column;
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .intro #face {
+    flex-direction: column;
+    margin: 0px 20px;
+  }
+
+  .intro #face img {
+    width: 60%;
+    height: auto;
+    margin-right: 0px;
+  }
+
+  .aboutme #about {
+    flex-direction: column;
+    margin-left: 0px;
+  }
+
+  .aboutme article p {
+    margin-top: 20px;
+  }
+
+  .mywork #portfolio {
+    margin: 0px;
+  }
+
+  .project {
+    padding: 20px;
+    flex-basis: 100%;
+  }
+
+  .project h3 {
+    font-size: 20px;
+  }
+
+  .contact form input[type="text"], .contact form input[type="email"], .contact form textarea {
+    max-width: 100%;
   }
 }
-
-  
+ 
