@@ -37,6 +37,7 @@ This landing page is licensed under the [MIT License](https://opensource.org/lic
 ## Link
 
 <ul>
+  <li><a href="https://markthos.github.io/Job.BI/educationPage.html">URL of Job.BI webpage</a></li>
   <li><a href="https://markthos.github.io/Professional-Webpage-Portfolio/">URL of deployed webpage</a></li>
   <li><a href="https://github.com/markthos/Professional-Webpage-Portfolio.git">URL of GitHub repository</a></li>
 </ul>
