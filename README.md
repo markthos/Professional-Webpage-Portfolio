@@ -32,7 +32,7 @@ This landing page is licensed under the [MIT License](https://opensource.org/lic
 
 ## Screenshot
 
-<img src="images\screencapture-127-0-0-1-5500-index-html-2023-05-12-01_30_27.png">
+<img src="images\PortfolioV3.0.png">
 
 ## Link
 
